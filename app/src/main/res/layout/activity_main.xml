@@ -1,0 +1,19 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+  <TextView android:text="RevBridge – Revolut → Webhook + Overlay" android:textStyle="bold" android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <EditText android:id="@+id/editUrl" android:hint="Webhook URL (ex: http://192.168.100.146:8000/webhook/revolut)" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri"/>
+  <EditText android:id="@+id/editSecret" android:hint="X-Webhook-Secret (ex: 1997111877474)" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword"/>
+  <EditText android:id="@+id/editOverlayUrl" android:hint="Overlay URL (ex: http://192.168.100.146:8000/overlay?theme=neon)" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri"/>
+  <Button android:id="@+id/btnSave" android:text="Salvează" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/btnNotifAccess" android:text="Deschide setarea: Acces la notificări" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/btnOverlayPerm" android:text="Permite “afișare peste alte aplicații”" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@+id/btnOverlayStart" android:text="Start overlay" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <Button android:id="@+id/btnOverlayStop" android:text="Stop overlay" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+  </LinearLayout>
+  <Button android:id="@+id/btnTest" android:text="Trimite TEST la server" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <Button android:id="@+id/btnOpenOverlayInBrowser" android:text="Deschide overlay în browser" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+  <TextView android:id="@+id/txtStatus" android:text="" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
